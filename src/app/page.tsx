@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Navigator } from "@/components/navigator";
 import { BusinessCard } from "@/components/businessCard";
@@ -9,6 +9,7 @@ import { Projects } from "@/components/projects";
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
 	const [navVisible, setNavVisible] = useState(false);
+	const [isDark, setIsDark] = useState<boolean | null>(null);
 
 	useEffect(() => {
 		if (!container) return;
@@ -23,8 +24,16 @@ export default function Home() {
 	}, [container]);
 
 	return (
-		<main className=" min-h-screen font-SUITE overflow-x-hidden">
-			<Navigator isVisible={navVisible} />
+		<main
+			className={`min-h-screen font-SUITE overflow-x-hidden ${
+				isDark && "bg-gray-600 text-gray-100"
+			}`}
+		>
+			<Navigator
+				isVisible={navVisible}
+				isDark={isDark}
+				setIsDark={setIsDark}
+			/>
 			<div
 				className=" h-screen snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
