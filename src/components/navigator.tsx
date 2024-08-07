@@ -4,9 +4,39 @@ import Link from "next/link";
 
 import { MdOutlineLightMode } from "react-icons/md";
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import { useEffect } from "react";
 
-export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
+export const Navigator = ({
+	isVisible,
+	isDark,
+	setIsDark,
+}: {
+	isVisible: boolean;
+	isDark: boolean | null;
+	setIsDark: (isDark: boolean) => void;
+}) => {
 	const navClass = "bg-white border border-stroke p-3 rounded-lg";
+
+	useEffect(() => {
+		if (localStorage.getItem("isDark") === null) {
+			localStorage.setItem("isDark", "false");
+			return;
+		}
+
+		setIsDark(localStorage.getItem("isDark") === "true");
+	}, [setIsDark]);
+
+	useEffect(() => {
+		if (isDark === null) return;
+		localStorage.setItem("isDark", isDark.toString());
+
+		if (isDark) {
+			document.documentElement.classList.add("dark");
+			return;
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+	}, [isDark]);
 
 	return (
 		<nav
@@ -14,7 +44,7 @@ export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
 				isVisible ? "opacity-100" : "opacity-0"
 			}`}
 		>
-			<div className={navClass}>
+			<div className={navClass} onClick={() => setIsDark(!isDark)}>
 				<MdOutlineLightMode size={25} color="gray" />
 			</div>
 			<div className={navClass}>
