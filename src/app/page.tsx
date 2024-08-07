@@ -1,3 +1,9 @@
+import { BusinessCard } from "@/components/businessCard";
+
 export default function Home() {
-	return <main className="flex min-h-screen p-24"></main>;
+	return (
+		<main className=" w-screen min-h-screen font-SUITE">
+			<BusinessCard />
+		</main>
+	);
 }
