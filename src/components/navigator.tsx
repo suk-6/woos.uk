@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 
+import { useEffect } from "react";
+
 import { MdOutlineLightMode } from "react-icons/md";
 import { FaGithub, FaInstagram } from "react-icons/fa";
-import { useEffect } from "react";
 
 export const Navigator = ({
 	isVisible,
