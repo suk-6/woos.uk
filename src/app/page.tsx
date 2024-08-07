@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BusinessCard } from "@/components/businessCard";
-import { Navigator } from "@/components/navigator";
+
 import { useScroll } from "@/hooks/useScroll";
+
+import { Navigator } from "@/components/navigator";
+import { BusinessCard } from "@/components/businessCard";
+import { Projects } from "@/components/projects";
 
 export default function Home() {
 	const { y } = useScroll();
@@ -15,10 +18,16 @@ export default function Home() {
 	}, [y]);
 
 	return (
-		<main className=" w-screen min-h-screen font-SUITE">
+		<main className=" min-h-screen font-SUITE overflow-x-hidden">
 			<Navigator isVisible={navVisible} />
-			<BusinessCard />
-			<div className="h-10"></div>
+			<div className=" h-screen snap-y snap-mandatory overflow-y-scroll scrollbar-hide">
+				<div className="snap-always snap-center">
+					<BusinessCard />
+				</div>
+				<div className="snap-always snap-center">
+					<Projects />
+				</div>
+			</div>
 		</main>
 	);
 }
