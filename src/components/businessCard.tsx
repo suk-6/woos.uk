@@ -14,7 +14,7 @@ export const BusinessCard = () => {
 				<h2 className=" font-SUITE font-medium text-xl sm:text-2xl">
 					Backend Developer
 				</h2>
-				<div className="w-full h-1 bg-black" />
+				<div className="w-1/3 h-1 bg-light-contrast dark:bg-dark-contrast" />
 			</div>
 			<div className=" flex flex-row justify-between items-end w-full min-w-60">
 				<div className=" flex flex-col gap-1">
