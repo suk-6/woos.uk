@@ -8,8 +8,8 @@ type TileProps = {
 
 export const Tile = ({ title, description, bg }: TileProps) => {
 	return (
-		<div className=" relative snap-always snap-center min-w-[35rem] h-full p-2">
-			<div className=" relative w-full h-full flex flex-col bg-gray-200 rounded-xl shadow-md z-10s">
+		<div className=" relative snap-always snap-center min-w-[70dvw] h-full p-2">
+			<div className=" relative w-full h-full flex flex-col bg-gray-200 dark:bg-stone-700 rounded-xl shadow-md z-10s">
 				<div className=" relative w-full h-full z-30 py-1">
 					{bg && (
 						<Image
