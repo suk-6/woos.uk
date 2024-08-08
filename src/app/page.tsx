@@ -29,10 +29,10 @@ export default function Home() {
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
 			>
-				<div className="snap-always snap-center">
+				<div className="snap-always snap-start">
 					<BusinessCard />
 				</div>
-				<div className="snap-always snap-center">
+				<div className="snap-always snap-start">
 					<Projects />
 				</div>
 			</div>
