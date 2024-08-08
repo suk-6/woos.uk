@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { useEffect } from "react";
 
-import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export const Navigator = ({
@@ -16,8 +16,6 @@ export const Navigator = ({
 	isDark: boolean | null;
 	setIsDark: (isDark: boolean) => void;
 }) => {
-	const navClass = "bg-white border border-stroke p-3 rounded-lg";
-
 	// https://tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
 	// TODO: Implement dark mode with system preference
 	useEffect(() => {
@@ -41,6 +39,11 @@ export const Navigator = ({
 		}
 	}, [isDark]);
 
+	const navClass =
+		"bg-light dark:bg-dark border border-stroke border-light-nav-border dark:border-dark-nav-border p-3 rounded-lg";
+
+	const iconClass = "text-light-nav-icon dark:text-dark-nav-icon";
+
 	return (
 		<nav
 			className={`flex gap-1 fixed mx-auto bottom-10 left-1/2 z-10 transform -translate-x-1/2 transition-opacity duration-500 ${
@@ -48,13 +51,17 @@ export const Navigator = ({
 			}`}
 		>
 			<div className={navClass} onClick={() => setIsDark(!isDark)}>
-				<MdOutlineLightMode size={25} color="gray" />
+				{isDark ? (
+					<MdOutlineDarkMode size={25} className={iconClass} />
+				) : (
+					<MdOutlineLightMode size={25} className={iconClass} />
+				)}
 			</div>
 			<div className={navClass}>
 				<ul className="flex gap-5 items-center">
 					<li>
 						<Link href="https://github.com/suk-6" target="_blank">
-							<FaGithub size={25} color="gray" />
+							<FaGithub size={25} className={iconClass} />
 						</Link>
 					</li>
 					<li>
@@ -62,7 +69,7 @@ export const Navigator = ({
 							href="https://instagram.com/woosuk_"
 							target="_blank"
 						>
-							<FaInstagram size={25} color="gray" />
+							<FaInstagram size={25} className={iconClass} />
 						</Link>
 					</li>
 				</ul>
