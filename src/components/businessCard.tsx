@@ -5,7 +5,7 @@ export const BusinessCard = () => {
 	const enName = "Woosuk Nam";
 
 	return (
-		<div className=" relative w-full min-h-[90dvh] px-10 py-12 sm:px-20 sm:py-20 flex flex-col justify-between select-none">
+		<div className=" relative w-full min-h-[85dvh] px-10 py-12 sm:px-20 sm:py-20 flex flex-col justify-between select-none">
 			<div className=" w-fit flex flex-col gap-2 sm:gap-4">
 				<div className="flex flex-col gap-1 sm:gap-3 text-nowrap font-HSSanTokki20 text-4xl sm:text-5xl">
 					<h1>{name.split("").join(" ")}</h1>
