@@ -14,6 +14,8 @@ export const DetailPage = ({
 			<p className="font-HSSanTokki20 text-3xl">{title}</p>
 			<p className="text-xl">{description}</p>
 		</div>
-		<div className={className + " flex justify-center"}>{children}</div>
+		<div className={className + " flex flex-col items-center"}>
+			{children}
+		</div>
 	</div>
 );
