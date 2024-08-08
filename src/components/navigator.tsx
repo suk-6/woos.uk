@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useDark } from "@/hooks/useDark";
 
 export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
@@ -40,6 +40,14 @@ export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
 							target="_blank"
 						>
 							<FaInstagram size={25} className={iconClass} />
+						</Link>
+					</li>
+					<li>
+						<Link
+							href="https://www.linkedin.com/in/woosuknam"
+							target="_blank"
+						>
+							<FaLinkedin size={25} className={iconClass} />
 						</Link>
 					</li>
 				</ul>
