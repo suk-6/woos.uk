@@ -1,10 +1,12 @@
 export const DetailPage = ({
 	title,
 	description,
+	className,
 	children,
 }: {
 	title: string;
 	description: string;
+	className?: string;
 	children?: React.ReactNode;
 }) => (
 	<div className="relative w-full min-h-[100dvh] border-y border-light-pageBorder dark:border-dark-pageBorder py-12 sm:py-14">
@@ -12,6 +14,6 @@ export const DetailPage = ({
 			<p className="font-HSSanTokki20 text-3xl">{title}</p>
 			<p className="text-xl">{description}</p>
 		</div>
-		{children}
+		<div className={className + " flex justify-center"}>{children}</div>
 	</div>
 );
