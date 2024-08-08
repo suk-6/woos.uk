@@ -24,7 +24,7 @@ export default function Home() {
 	}, [container]);
 
 	return (
-		<main className=" h-full font-SUITE overflow-hidden bg-light text-light-text dark:bg-dark dark:text-dark-text ">
+		<main className=" h-full font-SUITE overflow-hidden">
 			<Navigator
 				isVisible={navVisible}
 				isDark={isDark}
