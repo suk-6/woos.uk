@@ -30,7 +30,7 @@ export const Project = ({ data }: { data: ProjectType }) => {
 				)}
 			</div>
 			<div className="w-full h-[1px] bg-light-contrast dark:bg-dark-contrast my-2" />
-			<div className="whitespace-pre-line text-base font-thin lg:pt-1">
+			<div className="whitespace-pre-line text-base font-light lg:pt-1">
 				{data.content}
 			</div>
 		</div>
