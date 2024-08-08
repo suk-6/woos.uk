@@ -3,6 +3,7 @@ import { Gallery } from "../gallery/gallery";
 import { Tile } from "../gallery/tile";
 
 import dytimetalbe from "@/../public/dytimetable.png";
+import adego from "@/../public/adego.png";
 
 export const Projects = () => {
 	return (
@@ -13,28 +14,13 @@ export const Projects = () => {
 			<Gallery>
 				<Tile
 					title="덕영시간표"
-					description="매 시간마다, 다음 교시 과목을 알려주는 서비스"
+					description="다음 교시 과목을 알려주는 서비스"
 					bg={dytimetalbe}
 				/>
 				<Tile
-					title="덕영시간표"
-					description="매 시간마다, 다음 교시 과목을 알려주는 서비스"
-					bg={dytimetalbe}
-				/>
-				<Tile
-					title="덕영시간표"
-					description="매 시간마다, 다음 교시 과목을 알려주는 서비스"
-					bg={dytimetalbe}
-				/>
-				<Tile
-					title="덕영시간표"
-					description="매 시간마다, 다음 교시 과목을 알려주는 서비스"
-					bg={dytimetalbe}
-				/>
-				<Tile
-					title="덕영시간표"
-					description="매 시간마다, 다음 교시 과목을 알려주는 서비스"
-					bg={dytimetalbe}
+					title="ADEGO"
+					description="약속 지각 방지 솔루션"
+					bg={adego}
 				/>
 			</Gallery>
 		</DetailPage>
