@@ -24,11 +24,7 @@ export default function Home() {
 	}, [container]);
 
 	return (
-		<main
-			className={`min-h-screen font-SUITE overflow-x-hidden ${
-				isDark && "bg-gray-600 text-gray-100"
-			}`}
-		>
+		<main className="min-h-screen font-SUITE overflow-x-hidden bg-light text-light-text dark:bg-dark dark:text-dark-text ">
 			<Navigator
 				isVisible={navVisible}
 				isDark={isDark}
