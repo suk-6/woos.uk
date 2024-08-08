@@ -23,7 +23,7 @@ export default function Home() {
 	}, [container]);
 
 	return (
-		<main className=" h-full font-SUITE overflow-hidden">
+		<main className=" fixed w-full h-full font-SUITE overflow-hidden">
 			<Navigator isVisible={navVisible} />
 			<div
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
