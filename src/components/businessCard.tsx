@@ -24,7 +24,7 @@ export const BusinessCard = () => {
 				<div className="w-1/3 h-1 bg-light-contrast dark:bg-dark-contrast" />
 			</div>
 			<div className=" flex flex-row justify-between items-end w-full min-w-60">
-				<div className=" grid grid-cols-[1.8rem_1fr] gap-y-1">
+				<div className=" grid grid-cols-[0.2fr_1fr] gap-y-1">
 					<MonoB>E.</MonoB>
 					<Link href={"mailto:me@suk.kr"}>me@suk.kr</Link>
 					<MonoB>W.</MonoB>
