@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Navigator } from "@/components/navigator";
 import { BusinessCard } from "@/components/businessCard";
 import { Projects } from "@/components/projects";
+import { SocialCard } from "@/components/socialCard";
 
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
@@ -31,6 +32,9 @@ export default function Home() {
 			>
 				<div className="snap-always snap-start">
 					<BusinessCard />
+				</div>
+				<div className="snap-always snap-start">
+					<SocialCard />
 				</div>
 				<div className="snap-always snap-start">
 					<Projects />
