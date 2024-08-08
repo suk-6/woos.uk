@@ -21,6 +21,10 @@ const config: Config = {
 				light: {
 					DEFAULT: "#f9f9f9",
 					contrast: "#000",
+					nav: {
+						icon: colors.gray[500],
+						border: colors.gray[300],
+					},
 					pageBorder: colors.gray[300],
 					text: {
 						DEFAULT: "#000",
@@ -29,6 +33,10 @@ const config: Config = {
 				dark: {
 					DEFAULT: "#1a1a1a",
 					contrast: "#fff",
+					nav: {
+						icon: colors.gray[300],
+						border: "#4a4a4a",
+					},
 					pageBorder: colors.stone[700],
 					text: {
 						DEFAULT: "#fff",
