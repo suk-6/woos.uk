@@ -13,9 +13,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ko">
-			<body className="bg-light text-light-text dark:bg-dark dark:text-dark-text">
-				{children}
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
