@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { Noto_Sans_Mono } from "next/font/google";
+
+const notoMono = Noto_Sans_Mono({ subsets: ["latin"], weight: ["400"] });
+
+const MonoB = ({ children }: { children: React.ReactNode }) => (
+	<b className={notoMono.className}>{children}</b>
+);
 
 export const BusinessCard = () => {
 	const name = "남우석";
@@ -17,15 +24,13 @@ export const BusinessCard = () => {
 				<div className="w-1/3 h-1 bg-light-contrast dark:bg-dark-contrast" />
 			</div>
 			<div className=" flex flex-row justify-between items-end w-full min-w-60">
-				<div className=" flex flex-col gap-1">
-					<p>
-						<b>E.</b>{" "}
-						<Link href={"mailto:me@suk.kr"}>me@suk.kr</Link>
-					</p>
-					<p>
-						<b>T.</b>{" "}
-						<Link href={"tel:01099002512"}>010-9900-2512</Link>
-					</p>
+				<div className=" grid grid-cols-[1.8rem_1fr] gap-y-1">
+					<MonoB>E.</MonoB>
+					<Link href={"mailto:me@suk.kr"}>me@suk.kr</Link>
+					<MonoB>W.</MonoB>
+					<Link href={"https://suk.kr"}>https://suk.kr</Link>
+					<MonoB>T.</MonoB>
+					<Link href={"tel:01099002512"}>010-9900-2512</Link>
 				</div>
 				<div className="animate-wiggle text-6xl">👋</div>
 			</div>
