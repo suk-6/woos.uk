@@ -11,8 +11,8 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				SUITE: ["SUITE"],
-				HSSanTokki20: ["HSSanTokki20-Regular"],
+				SUITE: ["SUITE", "sans-serif"],
+				HSSanTokki20: ["HSSanTokki20-Regular", "sans-serif"],
 			},
 			colors: {
 				primary: {
