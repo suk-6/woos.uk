@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
 	content: [
@@ -8,11 +9,32 @@ const config: Config = {
 	],
 	darkMode: "class",
 	theme: {
-		fontFamily: {
-			SUITE: ["SUITE"],
-			HSSanTokki20: ["HSSanTokki20-Regular"],
-		},
 		extend: {
+			fontFamily: {
+				SUITE: ["SUITE"],
+				HSSanTokki20: ["HSSanTokki20-Regular"],
+			},
+			colors: {
+				primary: {
+					DEFAULT: "#4865D5",
+				},
+				light: {
+					DEFAULT: "#f9f9f9",
+					contrast: "#000",
+					pageBorder: colors.gray[300],
+					text: {
+						DEFAULT: "#000",
+					},
+				},
+				dark: {
+					DEFAULT: "#1a1a1a",
+					contrast: "#fff",
+					pageBorder: colors.stone[700],
+					text: {
+						DEFAULT: "#fff",
+					},
+				},
+			},
 			keyframes: {
 				wiggle: {
 					"0%, 100%": { transform: "rotate(-5deg)" },
