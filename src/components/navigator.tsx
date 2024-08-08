@@ -18,6 +18,8 @@ export const Navigator = ({
 }) => {
 	const navClass = "bg-white border border-stroke p-3 rounded-lg";
 
+	// https://tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
+	// TODO: Implement dark mode with system preference
 	useEffect(() => {
 		if (localStorage.getItem("isDark") === null) {
 			localStorage.setItem("isDark", "false");
