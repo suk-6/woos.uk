@@ -1,9 +1,7 @@
 import { DetailPage } from "../detailPage";
-import { Gallery } from "../gallery/gallery";
-import { Tile } from "../gallery/tile";
+import { Project } from "./project";
 
-import dytimetalbe from "@/../public/dytimetable.png";
-import adego from "@/../public/adego.png";
+import { myData } from "@/data";
 
 export const Projects = () => {
 	return (
@@ -11,18 +9,16 @@ export const Projects = () => {
 			title="프로젝트"
 			description="제가 진행했던 프로젝트를 소개합니다."
 		>
-			<Gallery>
-				<Tile
-					title="덕영시간표"
-					description="다음 교시 과목을 알려주는 서비스"
-					bg={dytimetalbe}
+			{myData.projects.map((project) => (
+				<Project
+					key={project.title}
+					title={project.title}
+					description={project.description}
+					homepage={project.homepage}
+					github={project.github}
+					content={project.content}
 				/>
-				<Tile
-					title="ADEGO"
-					description="약속 지각 방지 솔루션"
-					bg={adego}
-				/>
-			</Gallery>
+			))}
 		</DetailPage>
 	);
 };
