@@ -9,7 +9,6 @@ import { Projects } from "@/components/projects";
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
 	const [navVisible, setNavVisible] = useState(false);
-	const [isDark, setIsDark] = useState<boolean | null>(null);
 
 	useEffect(() => {
 		if (!container) return;
@@ -25,11 +24,7 @@ export default function Home() {
 
 	return (
 		<main className=" h-full font-SUITE overflow-hidden">
-			<Navigator
-				isVisible={navVisible}
-				isDark={isDark}
-				setIsDark={setIsDark}
-			/>
+			<Navigator isVisible={navVisible} />
 			<div
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
