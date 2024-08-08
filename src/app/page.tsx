@@ -24,14 +24,14 @@ export default function Home() {
 	}, [container]);
 
 	return (
-		<main className="min-h-screen font-SUITE overflow-x-hidden bg-light text-light-text dark:bg-dark dark:text-dark-text ">
+		<main className=" h-full font-SUITE overflow-hidden bg-light text-light-text dark:bg-dark dark:text-dark-text ">
 			<Navigator
 				isVisible={navVisible}
 				isDark={isDark}
 				setIsDark={setIsDark}
 			/>
 			<div
-				className=" h-screen snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
+				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
 			>
 				<div className="snap-always snap-center">
