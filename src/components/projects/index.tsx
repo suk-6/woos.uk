@@ -1,7 +1,7 @@
 import { DetailPage } from "../detailPage";
 import { Project } from "./project";
 
-import { myData } from "@/data";
+import { myData } from "@/constants/data";
 
 export const Projects = () => {
 	return (
