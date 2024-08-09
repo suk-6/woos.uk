@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Navigator } from "@/components/navigator";
 import { BusinessCard } from "@/components/businessCard";
 import { Projects } from "@/components/projects";
-import { SocialCard } from "@/components/socialCard";
+import { SocialCard } from "@/components/social";
 
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
