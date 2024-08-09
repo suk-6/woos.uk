@@ -21,6 +21,9 @@ const config: Config = {
 				light: {
 					DEFAULT: "#f9f9f9",
 					contrast: "#000",
+					social: {
+						block: "#d0d0d0",
+					},
 					nav: {
 						icon: colors.gray[500],
 						border: colors.gray[300],
