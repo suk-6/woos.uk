@@ -11,5 +11,5 @@ export const SocialIcon = {
 	Twitter: <FaTwitter className=" w-fit h-full" />,
 	Github: <FaGithub className=" w-fit h-full" />,
 	Linkedin: <FaLinkedin className=" w-fit h-full" />,
-	Website: <FaGlobe className=" w-fit h-full" />,
+	Blog: <FaGlobe className=" w-fit h-full" />,
 };
