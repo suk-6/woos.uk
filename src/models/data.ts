@@ -1,3 +1,5 @@
+import { SocialIcon } from "./social";
+
 export type DataType = {
 	name: string;
 	enName: string;
@@ -6,6 +8,7 @@ export type DataType = {
 	website: string;
 	phone: string;
 	projects: ProjectType[];
+	socials: SocialType[];
 };
 
 export type ProjectType = {
@@ -17,4 +20,14 @@ export type ProjectType = {
 		github?: string;
 	};
 	content: string;
+};
+
+export type SocialType = {
+	name: keyof typeof SocialIcon;
+	handle: string;
+	link: string;
+};
+
+export type RanderSocialType = SocialType & {
+	icon: React.ReactNode;
 };
