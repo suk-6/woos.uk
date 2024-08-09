@@ -9,9 +9,24 @@ export const myData: DataType = {
 	phone: "010-9900-2512",
 	socials: [
 		{
+			name: "Blog",
+			handle: "Suk's Blog",
+			link: "https://blog.suk.kr",
+		},
+		{
 			name: "Github",
 			handle: "@suk-6",
 			link: "https://github.com/suk-6",
+		},
+		{
+			name: "Linkedin",
+			handle: "@woosuknam",
+			link: "https://www.linkedin.com/in/woosuknam",
+		},
+		{
+			name: "Twitter",
+			handle: "@woosuknam",
+			link: "https://x.com/woosuknam",
 		},
 		{
 			name: "Instagram",
