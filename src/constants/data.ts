@@ -7,6 +7,18 @@ export const myData: DataType = {
 	email: "me@suk.kr",
 	website: "https://suk.kr",
 	phone: "010-9900-2512",
+	socials: [
+		{
+			name: "Github",
+			handle: "@suk-6",
+			link: "https://github.com/suk-6",
+		},
+		{
+			name: "Instagram",
+			handle: "@woosuk_",
+			link: "https://instagram.com/woosuk_",
+		},
+	],
 	projects: [
 		{
 			title: "MAKE; Access Management System",
