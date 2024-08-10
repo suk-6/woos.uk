@@ -38,23 +38,15 @@ export const Navigator = ({
 				isVisible ? "opacity-100" : "opacity-0"
 			}`}
 		>
+			<div onClick={() => setIsDark(!isDark)} className={navClass}>
+				{isDark ? (
+					<MdOutlineDarkMode size={25} className={iconClass} />
+				) : (
+					<MdOutlineLightMode size={25} className={iconClass} />
+				)}
+			</div>
 			<div className={navClass}>
 				<ul className="flex gap-5 items-center">
-					<li>
-						<div onClick={() => setIsDark(!isDark)}>
-							{isDark ? (
-								<MdOutlineDarkMode
-									size={25}
-									className={iconClass}
-								/>
-							) : (
-								<MdOutlineLightMode
-									size={25}
-									className={iconClass}
-								/>
-							)}
-						</div>
-					</li>
 					<li>
 						<GoArrowUp
 							size={25}
