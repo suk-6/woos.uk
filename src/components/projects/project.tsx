@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaHome } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import { ProjectType } from "@/models/data";
 
 export const Project = ({ data }: { data: ProjectType }) => {
@@ -7,10 +7,10 @@ export const Project = ({ data }: { data: ProjectType }) => {
 		<div className=" max-w-[60rem] h-full px-10 sm:px-14 flex flex-col gap-0">
 			<div className=" flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-end sm:gap-0">
 				<div>
-					<h1 className=" text-lg sm:text-2xl font-semibold">
+					<h1 className=" text-xl sm:text-2xl font-semibold">
 						{data.title}
 					</h1>
-					<h2 className=" text-sm sm:text-lg font-normal">
+					<h2 className=" text-md sm:text-lg font-normal">
 						{data.description}
 					</h2>
 				</div>
@@ -18,12 +18,12 @@ export const Project = ({ data }: { data: ProjectType }) => {
 					<div className="pb-1 flex flex-row gap-2">
 						{data.links.website && (
 							<Link href={data.links.website} target="_blank">
-								<FaHome className=" text-lg text-light-nav-icon dark:text-dark-nav-icon" />
+								<FaGlobe className=" text-xl text-light-nav-icon dark:text-dark-nav-icon" />
 							</Link>
 						)}
 						{data.links.github && (
 							<Link href={data.links.github} target="_blank">
-								<FaGithub className=" text-lg text-light-nav-icon dark:text-dark-nav-icon" />
+								<FaGithub className=" text-xl text-light-nav-icon dark:text-dark-nav-icon" />
 							</Link>
 						)}
 					</div>
