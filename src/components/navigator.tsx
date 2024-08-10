@@ -1,12 +1,16 @@
 "use client";
 
-import Link from "next/link";
-
-import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useDark } from "@/hooks/useDark";
+import { GoArrowDown, GoArrowUp } from "react-icons/go";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
+export const Navigator = ({
+	isVisible,
+	container,
+}: {
+	isVisible: boolean;
+	container: HTMLDivElement;
+}) => {
 	const { isDark, setIsDark } = useDark();
 
 	const navClass =
@@ -14,41 +18,56 @@ export const Navigator = ({ isVisible }: { isVisible: boolean }) => {
 
 	const iconClass = "text-light-nav-icon dark:text-dark-nav-icon";
 
+	const scrollUp = () => {
+		container.scrollBy({
+			top: -container.scrollHeight,
+			behavior: "smooth",
+		});
+	};
+
+	const scrollDown = () => {
+		container.scrollBy({
+			top: container.scrollHeight,
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<nav
 			className={`flex gap-1 fixed mx-auto bottom-10 left-1/2 z-10 transform -translate-x-1/2 transition-opacity duration-500 ${
 				isVisible ? "opacity-100" : "opacity-0"
 			}`}
 		>
-			<div className={navClass} onClick={() => setIsDark(!isDark)}>
-				{isDark ? (
-					<MdOutlineDarkMode size={25} className={iconClass} />
-				) : (
-					<MdOutlineLightMode size={25} className={iconClass} />
-				)}
-			</div>
 			<div className={navClass}>
 				<ul className="flex gap-5 items-center">
 					<li>
-						<Link href="https://github.com/suk-6" target="_blank">
-							<FaGithub size={25} className={iconClass} />
-						</Link>
+						<div onClick={() => setIsDark(!isDark)}>
+							{isDark ? (
+								<MdOutlineDarkMode
+									size={25}
+									className={iconClass}
+								/>
+							) : (
+								<MdOutlineLightMode
+									size={25}
+									className={iconClass}
+								/>
+							)}
+						</div>
 					</li>
 					<li>
-						<Link
-							href="https://instagram.com/woosuk_"
-							target="_blank"
-						>
-							<FaInstagram size={25} className={iconClass} />
-						</Link>
+						<GoArrowUp
+							size={25}
+							className={iconClass}
+							onClick={scrollUp}
+						/>
 					</li>
 					<li>
-						<Link
-							href="https://www.linkedin.com/in/woosuknam"
-							target="_blank"
-						>
-							<FaLinkedin size={25} className={iconClass} />
-						</Link>
+						<GoArrowDown
+							size={25}
+							className={iconClass}
+							onClick={scrollDown}
+						/>
 					</li>
 				</ul>
 			</div>
