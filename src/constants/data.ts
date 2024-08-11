@@ -73,7 +73,7 @@ export const myData: DataType = {
 			title: "덕영시간표",
 			description: "매 시간마다, 다음 교시 과목을 알려주는 서비스",
 			links: {
-				website: "https://suk.kr",
+				website: "https://timetable.dyhs.kr/install",
 				github: "https://github.com/suk-6/dytimetable",
 			},
 			date: {
@@ -240,11 +240,31 @@ export const myData: DataType = {
 			우리 Infinity팀은 Social Impact를 실현하기 위하여 Intel OpenVINO 모델을 사용하여 수어(ASL)를 자연어와 TTS를 활용한 오디오로 번역하는 웹 서비스를 기획, 개발했습니다.`,
 		},
 		{
-			title: "",
-			description: "",
+			title: "덕영필름",
+			description: "덕영고등학교 인생네컷",
 			links: {
-				website: "",
-				github: "",
+				github: "https://github.com/suk-6/dukyoung-film-server",
+			},
+			date: {
+				start: {
+					year: 2023,
+					month: 10,
+				},
+				isEnd: true,
+				end: {
+					year: 2023,
+					month: 11,
+				},
+			},
+			content: `이용자가 직접 터치하여 덕영필름을 이용할 수 있도록 사용자 인터페이스를 개발하고, 촬영된 이미지를 처리하여 QR코드로 다운로드 할 수 있게 하고, 포토프린터로 이미지를 전달하여 실제 인생네컷처럼 출력할 수 있도록 개발했습니다.
+			
+			실제로 학교 축제에서 많은 인원이 부스를 이용해 주었습니다.`,
+		},
+		{
+			title: "Withlive",
+			description: "시각장애인 보행보조 서비스",
+			links: {
+				github: "https://github.com/stac23-Withlive",
 			},
 			date: {
 				start: {
@@ -254,70 +274,210 @@ export const myData: DataType = {
 				isEnd: true,
 				end: {
 					year: 2024,
+					month: 6,
+				},
+			},
+			content: `Withlive는 스마트폰 카메라와 진동 모듈을 사용하여 시각장애인의 보행을 보조하는 서비스입니다.
+			
+			시각장애인이 Flutter로 제작된 앱을 실행하면, 카메라를 이용해 길거리 영상을 수집합니다.
+			
+			수집된 영상은 서버에서 자체 제작한 YOLOv5 모델을 통해 분석되고, 보행에 방해가 되는 물체가 있는 지 확인합니다.
+
+			분석이 완료되면 클라이언트는 물체의 위치를 임베디드 장비에 전달하여, 진동을 사용해 시각장애인에게 직접적으로 경고합니다.
+			
+			또한, 인식된 물체가 무엇인 지 TTS로 읽어줍니다.`,
+		},
+		{
+			title: "Home Infrastructure",
+			description: "홈 네트워크 및 서버 구축",
+			links: {
+				website: "https://suk.kr/home-infra",
+			},
+			date: {
+				start: {
+					year: 2023,
+					month: 6,
+				},
+				isEnd: true,
+				end: {
+					year: 2023,
 					month: 6,
 				},
 			},
 			content: ``,
 		},
 		{
-			title: "",
-			description: "",
+			title: "Korean History Site",
+			description: "한국사 문제 풀이 사이트",
 			links: {
-				website: "",
-				github: "",
+				github: "https://github.com/suk-6/korean-history-site",
 			},
 			date: {
 				start: {
-					year: 2024,
-					month: 6,
+					year: 2023,
+					month: 4,
 				},
 				isEnd: true,
 				end: {
-					year: 2024,
-					month: 6,
+					year: 2023,
+					month: 5,
 				},
 			},
-			content: ``,
+			content: `한국사 교과 지필평가를 맞아 학생들의 지식을 테스트하고, 부족한 부분을 보완하기 위해 개발했습니다.
+			
+			이 프로젝트에서 의미있었던 것은 Github Actions를 이용하여, 새 버전이 PUSH 될 때, Docker Image 형태로 빌드하고, 서버에 SSH로 접근해 서비스를 배포하는 과정을 자동화한 것입니다.`,
 		},
 		{
-			title: "",
-			description: "",
+			title: "Shipmates",
+			description: "가천대학교 예비대학 - 러닝 액션, 캐주얼 모바일 게임",
 			links: {
-				website: "",
-				github: "",
+				github: "https://github.com/kyw04/Shipmates",
 			},
 			date: {
 				start: {
-					year: 2024,
-					month: 6,
+					year: 2023,
+					month: 2,
 				},
 				isEnd: true,
 				end: {
-					year: 2024,
-					month: 6,
+					year: 2023,
+					month: 2,
 				},
 			},
-			content: ``,
+			content: `로비 화면 제작과 협업을 담당하였습니다.
+			Unity 특성상 Git Conflict가 많이 발생하여 이를 도맡아 해결했습니다.`,
 		},
 		{
-			title: "",
-			description: "",
+			title: "AndroidTfLiteCameraX",
+			description: "Real-time Image Classification using TFLite",
 			links: {
-				website: "",
-				github: "",
+				github: "https://github.com/suk-6/AndroidTfLiteCameraX",
 			},
 			date: {
 				start: {
-					year: 2024,
-					month: 6,
+					year: 2023,
+					month: 2,
 				},
 				isEnd: true,
 				end: {
-					year: 2024,
+					year: 2023,
+					month: 2,
+				},
+			},
+			content: `TensorFlow Lite 모델을 사용하여, 모바일 환경에서 실시간으로 이미지를 분류하는 앱입니다.`,
+		},
+		{
+			title: "고1식",
+			description: "고1식 = 고등학교 1학년 수학 공식",
+			links: {
+				github: "https://github.com/suk-6/formula_app",
+			},
+			date: {
+				start: {
+					year: 2022,
+					month: 12,
+				},
+				isEnd: true,
+				end: {
+					year: 2022,
+					month: 12,
+				},
+			},
+			content: `매번 수학 공식을 찾기 위해 힘들게 구글링을 하는 것은 비효율적이라고 생각되어, 수학 공식을 모아서 보여주는 앱을 제작하였습니다.`,
+		},
+		{
+			title: "월패드 보안 프로그램",
+			description: "아파트 월패드 백신 프로그램",
+			links: {
+				github: "https://github.com/suk-6/Wallpad-tool",
+			},
+			date: {
+				start: {
+					year: 2022,
+					month: 8,
+				},
+				isEnd: true,
+				end: {
+					year: 2022,
+					month: 9,
+				},
+			},
+			content: `최근 이슈화되는 아파트 월패드 해킹 사건의 해결을 목적으로 고안되었습니다.
+			
+			월패드의 카메라 부정 사용을 방지하고, 대기 중인 포트를 보여주는 등의 기능을 합니다.`,
+		},
+		{
+			title: "MAKE; Barcode",
+			description: "동아리 출입통제 시스템",
+			links: {
+				github: "https://github.com/suk-6/Make-Barcode",
+			},
+			date: {
+				start: {
+					year: 2022,
+					month: 7,
+				},
+				isEnd: true,
+				end: {
+					year: 2022,
+					month: 8,
+				},
+			},
+			content: `학생증의 학생 바코드를 이용하여 출입을 통제하는 Python 프로그램입니다.
+			
+			바코드를 인식하면 컴퓨터와 연결된 마이크로비트에서 자동문 스위치에 신호를 주는 방식으로 구현되었습니다.`,
+		},
+		{
+			title: "School Platform",
+			description: "학생과 교직원을 위한 플랫폼",
+			links: {
+				website: "https://dyhs.kr",
+			},
+			date: {
+				start: {
+					year: 2022,
+					month: 5,
+				},
+				isEnd: true,
+				end: {
+					year: 2022,
 					month: 6,
 				},
 			},
-			content: ``,
+			content: `덕영위키, 단축 URL 서비스, 교내 Git · Docker Repository 등의 서비스가 포함되어 있습니다.
+			
+			덕영위키는 오픈소스 위키 엔진인 미디어위키로 구축되었고, PHP를 기반으로 서비스되고 있습니다.
+			
+			단축 URL 서비스는 thedevs-network의 kutt 라이브러리를 기반으로 한글화와 교내 환경에 맞게 수정되었습니다.
+			
+			또한, Git 저장소와 Docker 저장소는 Gitea와 Harbor로 서비스되고 있습니다.
+			
+			School Platform의 모든 서비스는 Cloudflare CDN을 사용하여 DDos 공격을 방지하고, IP를 숨겨 포트 스캐닝, Brute Force 공격을 사전에 막았습니다.
+			
+			2022 경기콘텐츠창의학교 경진대회 최우수상 수상`,
+		},
+		{
+			title: "AI Face Recognition System",
+			description: "얼굴인식 인터폰",
+			links: {
+				github: "https://github.com/suk-6/Make-Barcode",
+			},
+			date: {
+				start: {
+					year: 2022,
+					month: 4,
+				},
+				isEnd: true,
+				end: {
+					year: 2022,
+					month: 5,
+				},
+			},
+			content: `시각장애인이 인터폰을 사용할 수 없는 문제를 해결하기 위해 고안되었습니다.
+			
+			OpenCV를 이용하여 등록된 얼굴이 인식되면, 이름을 TTS로 알려줍니다.
+			
+			Intel OpenVINO Pre-Trained Model을 사용하였고, 이 프로젝트를 인텔 아시아태평양 총괄 부사장에게 발표하였습니다.`,
 		},
 	],
 };
