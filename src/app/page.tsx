@@ -15,15 +15,23 @@ export default function Home() {
 
 	useEffect(() => {
 		if (!container) return;
-
-		const f = () => {
+		const callbackSetNavVisible = () => {
 			if (container.scrollTop > 100) setNavVisible(true);
 			else setNavVisible(false);
 		};
 
-		container.addEventListener("scroll", f);
-		return () => container.removeEventListener("scroll", f);
+		container.addEventListener("scroll", callbackSetNavVisible);
+		return () =>
+			container.removeEventListener("scroll", callbackSetNavVisible);
 	}, [container]);
+
+	const cards = [
+		<BusinessCard key="businessCard" />,
+		<SocialCard key="socialCard" />,
+		<Projects key="projects" />,
+		<Awards key="awards" />,
+		<Activities key="activities" />,
+	];
 
 	return (
 		<main className=" fixed w-full h-full font-SUITE overflow-hidden">
@@ -34,21 +42,11 @@ export default function Home() {
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
 			>
-				<div className="snap-always snap-start">
-					<BusinessCard />
-				</div>
-				<div className="snap-always snap-start">
-					<SocialCard />
-				</div>
-				<div className="snap-always snap-start">
-					<Projects />
-				</div>
-				<div className="snap-always snap-start">
-					<Awards />
-				</div>
-				<div className="snap-always snap-start">
-					<Activities />
-				</div>
+				{cards.map((card) => (
+					<div className="snap-always snap-start" key={card.key}>
+						{card}
+					</div>
+				))}
 			</div>
 		</main>
 	);
