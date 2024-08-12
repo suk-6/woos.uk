@@ -3,7 +3,7 @@ import { DataType } from "@/models/data";
 import { projects } from "./projects";
 import { socials } from "./socials";
 
-export const myData: DataType = {
+export const personalData: DataType = {
 	name: "남우석",
 	enName: "Woosuk Nam",
 	job: "Backend Developer",
