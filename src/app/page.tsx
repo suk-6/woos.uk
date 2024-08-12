@@ -34,6 +34,8 @@ export default function Home() {
 		return () => container.removeEventListener("scroll", f);
 	}, [cardHeights, container]);
 
+	const scrollItemsClesses = "scroll-items snap-always snap-start";
+
 	return (
 		<main className=" fixed w-full h-full font-SUITE overflow-hidden">
 			{container && (
@@ -43,19 +45,19 @@ export default function Home() {
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
 			>
-				<div className=" scroll-items snap-always snap-start">
+				<div className={scrollItemsClesses}>
 					<BusinessCard />
 				</div>
-				<div className=" scroll-items snap-always snap-start">
+				<div className={scrollItemsClesses}>
 					<SocialCard />
 				</div>
-				<div className=" scroll-items snap-always snap-start">
+				<div className={scrollItemsClesses}>
 					<Projects />
 				</div>
-				<div className=" scroll-items snap-always snap-start">
+				<div className={scrollItemsClesses}>
 					<Awards />
 				</div>
-				<div className=" scroll-items snap-always snap-start">
+				<div className={scrollItemsClesses}>
 					<Activities />
 				</div>
 			</div>
