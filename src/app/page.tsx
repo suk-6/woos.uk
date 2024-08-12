@@ -43,7 +43,10 @@ export default function Home() {
 				ref={setContainer}
 			>
 				{cards.map((card) => (
-					<div className="snap-always snap-start" key={card.key}>
+					<div
+						className="scroll-items snap-always snap-align-none sm:snap-start"
+						key={card.key}
+					>
 						{card}
 					</div>
 				))}
