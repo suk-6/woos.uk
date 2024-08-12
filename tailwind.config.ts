@@ -16,9 +16,7 @@ const config: Config = {
 				HSSanTokki20: ["HSSanTokki20-Regular", "sans-serif"],
 			},
 			colors: {
-				primary: {
-					DEFAULT: "#4865D5",
-				},
+				primary: "#4865D5",
 				light: {
 					DEFAULT: "#f9f9f9",
 					contrast: "#000",
