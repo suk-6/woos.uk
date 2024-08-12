@@ -8,7 +8,7 @@ type SocialBlockProps = {
 export const SocialBlock = ({ social }: SocialBlockProps) => {
 	return (
 		<Link
-			className=" w-32 h-32 sm:w-44 sm:h-44 px-6 sm:px-8 pt-7 pb-5 sm:pb-6 bg-light-social-block rounded-xl shadow-lg flex-col gap-3 justify-between items-start inline-flex"
+			className=" w-32 h-32 sm:w-44 sm:h-44 px-6 sm:px-8 pt-5 sm:pt-7 pb-5 sm:pb-6 bg-light-social-block rounded-xl shadow-lg flex-col gap-3 justify-between items-start inline-flex"
 			href={social.link}
 			target="_blank"
 		>
