@@ -20,7 +20,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 	const scrollTo = (direction: "up" | "down") => {
 		if (!container) return;
 
-		const cards = container.querySelectorAll(".snap-start");
+		const cards = container.querySelectorAll(".scroll-items");
 		const scrollY = container.scrollTop;
 		const cardHeights: number[] = [];
 
