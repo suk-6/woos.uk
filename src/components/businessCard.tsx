@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Noto_Sans_Mono } from "next/font/google";
 
-import { myData } from "@/constants/data";
+import { myData } from "@/constants";
 
 const notoMono = Noto_Sans_Mono({ subsets: ["latin"], weight: ["400"] });
 
