@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const getCardHeights = (container: HTMLDivElement) => {
+const getCardOffsets = (container: HTMLDivElement) => {
 	if (!container) return;
 
 	const cards = container.querySelectorAll(".scroll-items");
@@ -14,18 +14,18 @@ const getCardHeights = (container: HTMLDivElement) => {
 	return heights;
 };
 
-export const useGetCardHeights = (container: HTMLDivElement | null) => {
-	const [cardHeights, setCardHeights] = useState<number[]>([]);
+export const useGetCardOffsets = (container: HTMLDivElement | null) => {
+	const [cardOffsets, setCardOffsets] = useState<number[]>([]);
 
 	useEffect(() => {
 		if (!container) return;
 
-		const f = () => setCardHeights(getCardHeights(container)!);
+		const f = () => setCardOffsets(getCardOffsets(container)!);
 		f();
 
 		container.addEventListener("resize", f);
 		return () => container.removeEventListener("resize", f);
 	}, [container]);
 
-	return { cardHeights };
+	return { cardOffsets };
 };

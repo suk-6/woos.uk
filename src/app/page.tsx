@@ -8,12 +8,12 @@ import { Projects } from "@/components/projects";
 import { SocialCard } from "@/components/social";
 import { Awards } from "@/components/awards";
 import { Activities } from "@/components/activities";
-import { useGetCardHeights } from "@/hooks/useGetCardHeights";
+import { useGetCardOffsets } from "@/hooks/useGetCardOffsets";
 
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
 	const [navVisible, setNavVisible] = useState(false);
-	const { cardHeights } = useGetCardHeights(container);
+	const { cardOffsets } = useGetCardOffsets(container);
 
 	useEffect(() => {
 		if (!container) return;
@@ -23,7 +23,7 @@ export default function Home() {
 			else setNavVisible(false);
 
 			if (navigator.userAgent.includes("iPhone")) {
-				if (container.scrollTop > cardHeights[2])
+				if (container.scrollTop > cardOffsets[2])
 					container.classList.remove("snap-y");
 				else container.classList.add("snap-y");
 			}
@@ -32,7 +32,7 @@ export default function Home() {
 
 		container.addEventListener("scroll", f);
 		return () => container.removeEventListener("scroll", f);
-	}, [cardHeights, container]);
+	}, [cardOffsets, container]);
 
 	const scrollItemsClesses = "scroll-items snap-always snap-start";
 

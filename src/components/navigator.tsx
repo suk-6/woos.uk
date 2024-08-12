@@ -22,11 +22,11 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 
 		const cards = container.querySelectorAll(".scroll-items");
 		const scrollY = container.scrollTop;
-		const cardHeights: number[] = [];
+		const cardOffsets: number[] = [];
 
 		cards.forEach((c) => {
 			const card = c as HTMLDivElement;
-			cardHeights.push(card.offsetTop);
+			cardOffsets.push(card.offsetTop);
 		});
 
 		const move = (height: number) =>
@@ -36,7 +36,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 			});
 
 		if (direction === "up") {
-			cardHeights.forEach((cardHeight) => {
+			cardOffsets.forEach((cardHeight) => {
 				console.log(scrollY, cardHeight);
 				if (scrollY > cardHeight) {
 					move(cardHeight);
@@ -44,7 +44,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 				}
 			});
 		} else if (direction === "down") {
-			cardHeights.reverse().forEach((cardHeight) => {
+			cardOffsets.reverse().forEach((cardHeight) => {
 				if (scrollY < cardHeight) {
 					move(cardHeight);
 					return;
