@@ -34,19 +34,19 @@ export default function Home() {
 				className=" h-[100dvh] snap-y snap-mandatory overflow-y-scroll scrollbar-hide"
 				ref={setContainer}
 			>
-				<div className="snap-always snap-start">
+				<div className=" scroll-items snap-always snap-start">
 					<BusinessCard />
 				</div>
-				<div className="snap-always snap-start">
+				<div className=" scroll-items snap-always snap-start">
 					<SocialCard />
 				</div>
-				<div className="snap-always snap-start">
+				<div className=" scroll-items snap-always snap-start">
 					<Projects />
 				</div>
-				<div className="snap-always snap-start">
+				<div className=" scroll-items snap-always snap-start">
 					<Awards />
 				</div>
-				<div className="snap-always snap-start">
+				<div className=" scroll-items snap-always snap-start">
 					<Activities />
 				</div>
 			</div>
