@@ -32,7 +32,6 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 
 		if (direction === "up") {
 			cardOffsets.forEach((cardHeight) => {
-				console.log(scrollY, cardHeight);
 				if (scrollY > cardHeight) {
 					move(cardHeight);
 					return;
