@@ -1,6 +1,7 @@
 "use client";
 
 import { useDark } from "@/hooks/useDark";
+import { useGetCardOffsets } from "@/hooks/useGetCardOffsets";
 import { GoArrowDown, GoArrowUp } from "react-icons/go";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
@@ -11,6 +12,7 @@ type NavigatorProps = {
 
 export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 	const { isDark, setIsDark } = useDark();
+	const { cardOffsets } = useGetCardOffsets(container);
 
 	const navClass =
 		"bg-light dark:bg-dark border border-stroke border-light-nav-border dark:border-dark-nav-border p-3 rounded-lg";
@@ -20,14 +22,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 	const scrollTo = (direction: "up" | "down") => {
 		if (!container) return;
 
-		const cards = container.querySelectorAll(".scroll-items");
 		const scrollY = container.scrollTop;
-		const cardOffsets: number[] = [];
-
-		cards.forEach((c) => {
-			const card = c as HTMLDivElement;
-			cardOffsets.push(card.offsetTop);
-		});
 
 		const move = (height: number) =>
 			container.scrollTo({
