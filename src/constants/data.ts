@@ -200,7 +200,7 @@ export const myData: DataType = {
 					month: 4,
 				},
 			},
-			content: ``,
+			content: `WireGuard Protocol을 이용한 VPN 서비스입니다.`,
 		},
 		{
 			title: "파토",
@@ -216,6 +216,7 @@ export const myData: DataType = {
 				isEnd: false,
 			},
 			content: `백엔드 개발 총괄을 하였으며 주요 기능으로는 프론트엔드와 협업을 통한 웹소켓 채팅 구현, 카카오 OAuth 구현 등이 있습니다.
+
 			 해당 팀 프로젝트를 진행하며 팀원간 소통의 중요성과 프로젝트 방법론에 대해 다시 한번 생각해볼 수 있는 계기가 되었습니다.`,
 		},
 		{
@@ -237,6 +238,7 @@ export const myData: DataType = {
 				},
 			},
 			content: `약 일주일 간의 국제교류 기간 동안 싱가포르 학생들과 함께 프로젝트를 진행했습니다.
+
 			우리 Infinity팀은 Social Impact를 실현하기 위하여 Intel OpenVINO 모델을 사용하여 수어(ASL)를 자연어와 TTS를 활용한 오디오로 번역하는 웹 서비스를 기획, 개발했습니다.`,
 		},
 		{
@@ -304,7 +306,7 @@ export const myData: DataType = {
 					month: 6,
 				},
 			},
-			content: ``,
+			content: `홈 네트워크를 구성하고 Synology NAS, Proxmox, Intel NUC 등을 활용한 서버들을 구축했습니다.`,
 		},
 		{
 			title: "Korean History Site",
