@@ -6,6 +6,8 @@ import { Navigator } from "@/components/navigator";
 import { BusinessCard } from "@/components/businessCard";
 import { Projects } from "@/components/projects";
 import { SocialCard } from "@/components/social";
+import { Awards } from "@/components/awards";
+import { Activities } from "@/components/activities";
 
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
@@ -40,6 +42,12 @@ export default function Home() {
 				</div>
 				<div className="snap-always snap-start">
 					<Projects />
+				</div>
+				<div className="snap-always snap-start">
+					<Awards />
+				</div>
+				<div className="snap-always snap-start">
+					<Activities />
 				</div>
 			</div>
 		</main>
