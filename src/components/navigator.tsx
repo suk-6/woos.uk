@@ -4,13 +4,12 @@ import { useDark } from "@/hooks/useDark";
 import { GoArrowDown, GoArrowUp } from "react-icons/go";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-export const Navigator = ({
-	isVisible,
-	container,
-}: {
+type NavigatorProps = {
 	isVisible: boolean;
 	container: HTMLDivElement;
-}) => {
+};
+
+export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 	const { isDark, setIsDark } = useDark();
 
 	const navClass =
@@ -18,18 +17,40 @@ export const Navigator = ({
 
 	const iconClass = "text-light-nav-icon dark:text-dark-nav-icon";
 
-	const scrollUp = () => {
-		container.scrollBy({
-			top: -container.scrollHeight,
-			behavior: "smooth",
-		});
-	};
+	const scrollTo = (direction: "up" | "down") => {
+		if (!container) return;
 
-	const scrollDown = () => {
-		container.scrollBy({
-			top: container.scrollHeight,
-			behavior: "smooth",
+		const cards = container.querySelectorAll(".snap-start");
+		const scrollY = container.scrollTop;
+		const cardHeights: number[] = [];
+
+		cards.forEach((c) => {
+			const card = c as HTMLDivElement;
+			cardHeights.push(card.offsetTop);
 		});
+
+		const move = (height: number) =>
+			container.scrollTo({
+				top: height,
+				behavior: "smooth",
+			});
+
+		if (direction === "up") {
+			cardHeights.forEach((cardHeight) => {
+				console.log(scrollY, cardHeight);
+				if (scrollY > cardHeight) {
+					move(cardHeight);
+					return;
+				}
+			});
+		} else if (direction === "down") {
+			cardHeights.reverse().forEach((cardHeight) => {
+				if (scrollY < cardHeight) {
+					move(cardHeight);
+					return;
+				}
+			});
+		}
 	};
 
 	return (
@@ -51,14 +72,14 @@ export const Navigator = ({
 						<GoArrowUp
 							size={25}
 							className={iconClass}
-							onClick={scrollUp}
+							onClick={() => scrollTo("up")}
 						/>
 					</li>
 					<li>
 						<GoArrowDown
 							size={25}
 							className={iconClass}
-							onClick={scrollDown}
+							onClick={() => scrollTo("down")}
 						/>
 					</li>
 				</ul>
