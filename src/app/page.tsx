@@ -16,9 +16,23 @@ export default function Home() {
 	useEffect(() => {
 		if (!container) return;
 
+		const cards = container.querySelectorAll(".scroll-items");
+		const cardHeights: number[] = [];
+
+		cards.forEach((c) => {
+			const card = c as HTMLDivElement;
+			cardHeights.push(card.offsetTop);
+		});
+
 		const f = () => {
 			if (container.scrollTop > 100) setNavVisible(true);
 			else setNavVisible(false);
+
+			if (navigator.userAgent.includes("AppleWebKit")) {
+				if (container.scrollTop > cardHeights[2])
+					container.classList.remove("snap-y");
+				else container.classList.add("snap-y");
+			}
 		};
 
 		container.addEventListener("scroll", f);
