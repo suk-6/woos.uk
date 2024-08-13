@@ -44,7 +44,7 @@ export const BusinessCard = () => {
 					</Link>
 				</div>
 				<div className="animate-wiggle w-2/12 sm:w-16">
-					<Image src={hand} alt="profile" />
+					<Image src={hand} alt="흔들고 있는 손" />
 				</div>
 			</div>
 		</div>
