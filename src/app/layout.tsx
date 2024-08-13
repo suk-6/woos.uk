@@ -6,6 +6,10 @@ export const metadata: Metadata = {
 	description: "Suk's personal website",
 	openGraph: {
 		title: "@woosuknam",
+		url: "https://nam.woo.suk.kr",
+		type: "website",
+		locale: "ko_KR",
+		siteName: "@woosuknam",
 	},
 };
 
