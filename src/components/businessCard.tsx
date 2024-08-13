@@ -43,7 +43,7 @@ export const BusinessCard = () => {
 						{personalData.phone}
 					</Link>
 				</div>
-				<div className="animate-wiggle w-2/12 sm:w-16">
+				<div className="animate-wiggle w-14 sm:w-16">
 					<Image src={hand} alt="흔들고 있는 손" />
 				</div>
 			</div>
