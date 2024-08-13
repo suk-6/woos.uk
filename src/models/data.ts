@@ -1,5 +1,6 @@
 import { SocialType } from "./social";
 import { ProjectType } from "./project";
+import { AwardType } from "./award";
 
 export type DataType = {
 	name: string;
@@ -10,4 +11,5 @@ export type DataType = {
 	phone: string;
 	projects: ProjectType[];
 	socials: SocialType[];
+	awards: AwardType[];
 };
