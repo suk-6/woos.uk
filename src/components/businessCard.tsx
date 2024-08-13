@@ -1,4 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import hand from "@/assets/hand.png";
+
 import { Noto_Sans_Mono } from "next/font/google";
 
 import { personalData } from "@/constants";
@@ -39,7 +43,9 @@ export const BusinessCard = () => {
 						{personalData.phone}
 					</Link>
 				</div>
-				<div className="animate-wiggle text-6xl">👋</div>
+				<div className="animate-wiggle w-2/12 sm:w-16">
+					<Image src={hand} alt="profile" />
+				</div>
 			</div>
 		</div>
 	);
