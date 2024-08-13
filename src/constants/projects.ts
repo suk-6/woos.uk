@@ -235,13 +235,13 @@ export const projects: ProjectType[] = [
 		},
 		date: {
 			start: {
-				year: 2024,
-				month: 6,
+				year: 2023,
+				month: 7,
 			},
 			isEnd: true,
 			end: {
-				year: 2024,
-				month: 6,
+				year: 2023,
+				month: 9,
 			},
 		},
 		content: `Withlive는 스마트폰 카메라와 진동 모듈을 사용하여 시각장애인의 보행을 보조하는 서비스입니다.
