@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
 	title: "woosuknam",
 	description: "Suk's personal website",
+	metadataBase: new URL("https://nam.woo.suk.kr"),
 	openGraph: {
 		title: "@woosuknam",
 		url: "https://nam.woo.suk.kr",
