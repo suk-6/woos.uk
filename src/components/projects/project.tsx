@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { ProjectType } from "@/models/data";
+
+import { ProjectType } from "@/models/project";
 
 const monthFormat = (month: number) =>
 	month < 10 ? `0${month}` : month.toString();

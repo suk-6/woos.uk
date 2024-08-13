@@ -1,4 +1,4 @@
-import { SocialType } from "@/models/data";
+import { SocialType } from "@/models/social";
 
 export const socials: SocialType[] = [
 	{

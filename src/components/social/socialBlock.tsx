@@ -1,5 +1,6 @@
-import { RanderSocialType } from "@/models/data";
 import Link from "next/link";
+
+import { RanderSocialType } from "@/models/social";
 
 type SocialBlockProps = {
 	social: RanderSocialType;
