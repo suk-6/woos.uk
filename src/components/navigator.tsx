@@ -31,16 +31,16 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 			});
 
 		if (direction === "up") {
-			cardOffsets.forEach((cardHeight) => {
-				if (scrollY > cardHeight) {
-					move(cardHeight);
+			cardOffsets.forEach((cardOffset) => {
+				if (scrollY > cardOffset) {
+					move(cardOffset);
 					return;
 				}
 			});
 		} else if (direction === "down") {
-			cardOffsets.reverse().forEach((cardHeight) => {
-				if (scrollY < cardHeight) {
-					move(cardHeight);
+			cardOffsets.reverse().forEach((cardOffset) => {
+				if (scrollY < cardOffset) {
+					move(cardOffset);
 					return;
 				}
 			});
