@@ -38,7 +38,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 				}
 			});
 		} else if (direction === "down") {
-			cardOffsets.reverse().forEach((cardOffset) => {
+			cardOffsets.toReversed().forEach((cardOffset) => {
 				if (scrollY < cardOffset) {
 					move(cardOffset);
 					return;
