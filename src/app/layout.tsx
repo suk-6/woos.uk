@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
 		<html lang="ko">
 			<body className="bg-light text-light-text dark:bg-dark dark:text-dark-text">
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
