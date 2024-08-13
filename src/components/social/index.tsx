@@ -1,6 +1,6 @@
-import { SocialIcon } from "@/models/social";
 import { SocialBlock } from "./socialBlock";
 import { personalData } from "@/constants";
+import { SocialIcon } from "@/models/social/icon";
 
 export const SocialCard = () => {
 	return (
