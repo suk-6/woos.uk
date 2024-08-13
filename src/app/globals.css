@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css");
 
 @font-face {
@@ -11,6 +7,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* 
 :root {
