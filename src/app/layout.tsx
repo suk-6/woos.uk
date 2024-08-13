@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
 	title: "woosuknam",
 	description: "Suk's personal website",
+	openGraph: {
+		title: "@woosuknam",
+	},
 };
 
 export default function RootLayout({
