@@ -24,7 +24,7 @@ export default function Home() {
 			else setNavVisible(false);
 
 			if (navigator.userAgent.includes("iPhone")) {
-				if (container.scrollTop > cardOffsets[2])
+				if (container.scrollTop > cardOffsets[3])
 					container.classList.remove("snap-y");
 				else container.classList.add("snap-y");
 			}
