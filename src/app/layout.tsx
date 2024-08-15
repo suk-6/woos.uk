@@ -5,10 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
 	title: "woosuknam",
 	description: "Suk's personal website",
-	metadataBase: new URL("https://nam.woo.suk.kr"),
+	metadataBase: new URL("https://woos.uk"),
 	openGraph: {
 		title: "@woosuknam",
-		url: "https://nam.woo.suk.kr",
+		url: "https://woos.uk",
 		type: "website",
 		locale: "ko_KR",
 		siteName: "@woosuknam",
