@@ -9,6 +9,7 @@ import { SocialCard } from "@/components/social";
 import { Awards } from "@/components/awards";
 import { Activities } from "@/components/activities";
 import { useGetCardOffsets } from "@/hooks/useGetCardOffsets";
+import { Education } from "@/components/education";
 
 export default function Home() {
 	const [container, setContainer] = useState<HTMLDivElement | null>(null);
@@ -50,6 +51,9 @@ export default function Home() {
 				</div>
 				<div className={scrollItemsClesses}>
 					<SocialCard />
+				</div>
+				<div className={scrollItemsClesses}>
+					<Education />
 				</div>
 				<div className={scrollItemsClesses}>
 					<Projects />

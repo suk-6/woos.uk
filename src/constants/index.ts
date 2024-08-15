@@ -4,6 +4,7 @@ import { projects } from "./projects";
 import { socials } from "./socials";
 import { awards } from "./awards";
 import { activities } from "./activities";
+import { education } from "./education";
 
 export const personalData: DataType = {
 	name: "남우석",
@@ -14,6 +15,7 @@ export const personalData: DataType = {
 	phone: "010-9900-2512",
 	socials: socials,
 	projects: projects,
+	education: education,
 	awards: awards,
 	activities: activities,
 };
