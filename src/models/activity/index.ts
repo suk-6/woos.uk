@@ -16,5 +16,5 @@ export type ActivityType = {
 		website?: string;
 		github?: string;
 	};
-	content: string;
+	content: string | null;
 };
