@@ -10,9 +10,13 @@ export const projects: ProjectType[] = [
 		date: {
 			start: {
 				year: 2024,
-				month: 3,
+				month: 4,
 			},
-			isEnd: false,
+			isEnd: true,
+			end: {
+				year: 2024,
+				month: 7,
+			},
 		},
 		content: `기존 MAKE; Barcode 프로젝트는 아래와 같은 학생들의 불만 때문에 운영하기 어려운 상황에 도달했습니다.
 
