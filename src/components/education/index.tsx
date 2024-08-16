@@ -8,7 +8,7 @@ export const Education = () => {
 		const aDate = new Date(a.date.start.year, a.date.start.month);
 		const bDate = new Date(b.date.start.year, b.date.start.month);
 
-		return bDate.getTime() - aDate.getTime();
+		return aDate.getTime() - bDate.getTime();
 	});
 
 	return (
