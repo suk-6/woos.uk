@@ -2,6 +2,22 @@ import { ProjectType } from "@/models/project";
 
 export const projects: ProjectType[] = [
 	{
+		title: "woos.uk",
+		description: "포트폴리오 웹사이트",
+		links: {
+			website: "https://woos.uk",
+			github: "https://github.com/suk-6/woos.uk",
+		},
+		date: {
+			start: {
+				year: 2024,
+				month: 8,
+			},
+			isEnd: false,
+		},
+		content: "",
+	},
+	{
 		title: "MAKE; Access Management System",
 		description: "동방 출입관리 시스템 (MAKE; Barcode v2)",
 		links: {
