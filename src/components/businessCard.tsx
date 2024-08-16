@@ -15,7 +15,7 @@ const MonoB = ({ children }: { children: React.ReactNode }) => (
 
 export const BusinessCard = () => {
 	return (
-		<div className=" relative w-full min-h-[85dvh] px-10 py-12 sm:px-20 sm:py-20 flex flex-col justify-between select-none">
+		<div className=" relative w-full min-h-[100dvh] px-10 py-8 sm:px-20 sm:py-20 flex flex-col justify-between select-none">
 			<div className=" w-fit flex flex-col gap-2 sm:gap-4">
 				<div className="flex flex-col gap-1 sm:gap-3 text-nowrap font-HSSanTokki20 text-4xl sm:text-5xl">
 					<h1>{personalData.name.split("").join(" ")}</h1>
@@ -26,7 +26,7 @@ export const BusinessCard = () => {
 				</h2>
 				<div className="w-1/3 h-1 bg-light-contrast dark:bg-dark-contrast" />
 			</div>
-			<div className=" flex flex-row justify-between items-end w-full min-w-60">
+			<div className=" mt-auto flex flex-row justify-between items-end w-full min-w-60">
 				<div className=" grid grid-cols-[0.2fr_1fr] gap-y-1 text-base">
 					<MonoB>E.</MonoB>
 					<Link href={`mailto:${personalData.email}`}>
@@ -46,6 +46,9 @@ export const BusinessCard = () => {
 				<div className="animate-wiggle w-14 sm:w-16">
 					<Image src={hand} alt="흔들고 있는 손" />
 				</div>
+			</div>
+			<div className=" mt-1 w-full flex justify-center">
+				<div className="w-5 h-5 rotate-[-45deg] border-l border-b dark:border-light-pageBorder border-dark-pageBorder box-border animate-scrollGuidance" />
 			</div>
 		</div>
 	);

@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 
@@ -51,9 +52,17 @@ const config: Config = {
 					"0%, 100%": { transform: "rotate(-5deg)" },
 					"50%": { transform: "rotate(5deg)" },
 				},
+				scrollGuidance: {
+					"0%": { transform: "rotate(-45deg) translate(0, 0)" },
+					"20%": {
+						transform: "rotate(-45deg) translate(-10px, 10px)",
+					},
+					"40%": { transform: "rotate(-45deg) translate(0, 0)" },
+				},
 			},
 			animation: {
 				wiggle: "wiggle 1.5s ease-in-out infinite",
+				scrollGuidance: "scrollGuidance 2.5s infinite",
 			},
 		},
 	},
