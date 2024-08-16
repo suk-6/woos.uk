@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ko">
-			<body className="bg-light text-light-text dark:bg-dark dark:text-dark-text">
+			<body className="bg-light-sibao-1 text-light-sibao-10 dark:bg-dark-sibao-2 dark:text-dark-sibao-9">
 				{children}
 				<Analytics />
 			</body>

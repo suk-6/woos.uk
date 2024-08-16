@@ -33,6 +33,18 @@ const config: Config = {
 					text: {
 						DEFAULT: "#000",
 					},
+					sibao: {
+						1: "#FFFFFF",
+						2: "#FAFAFC",
+						3: "#EEEEF5",
+						4: "#DCDCE5",
+						5: "#BFBFCF",
+						6: "#A4A4B5",
+						7: "#878798",
+						8: "#646475",
+						9: "#404051",
+						10: "#18181C",
+					},
 				},
 				dark: {
 					DEFAULT: "#1a1a1a",
@@ -44,6 +56,18 @@ const config: Config = {
 					pageBorder: colors.stone[700],
 					text: {
 						DEFAULT: "#fff",
+					},
+					sibao: {
+						1: "#000000",
+						2: "#0F0F13",
+						3: "#181C22",
+						4: "#525264",
+						5: "#76768D",
+						6: "#9494A8",
+						7: "#B2B2BD",
+						8: "#CCCCD3",
+						9: "#E4E4E9",
+						10: "#F0F0F9",
 					},
 				},
 			},

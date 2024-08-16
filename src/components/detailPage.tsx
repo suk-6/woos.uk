@@ -14,7 +14,7 @@ export const DetailPage = ({
 	<div
 		className={
 			classNameOverride +
-			" relative w-full min-h-[100dvh] border-y border-light-pageBorder dark:border-dark-pageBorder pt-12 sm:pt-14 pb-28"
+			" relative w-full min-h-[100dvh] border-t border-light-sibao-7 dark:border-dark-sibao-7 pt-12 sm:pt-14 pb-28"
 		}
 	>
 		<div className="flex flex-col gap-1 px-10 sm:px-14 pb-10 lg:pb-16">

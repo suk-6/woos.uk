@@ -6,7 +6,7 @@ import {
 	FaTwitter,
 } from "react-icons/fa";
 
-const socialIconClasses = " w-fit h-full text-black";
+const socialIconClasses = " w-fit h-full";
 
 export const SocialIcon = {
 	Instagram: <FaInstagram className={socialIconClasses} />,
