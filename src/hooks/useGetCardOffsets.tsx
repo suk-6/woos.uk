@@ -16,6 +16,9 @@ const getCardOffsets = (container: HTMLDivElement) => {
 
 export const useGetCardOffsets = (container: HTMLDivElement | null) => {
 	const [cardOffsets, setCardOffsets] = useState<number[]>([]);
+	const [update, setUpdate] = useState(false);
+
+	const updateOffsets = () => setUpdate(!update);
 
 	useEffect(() => {
 		if (!container) return;
@@ -25,7 +28,7 @@ export const useGetCardOffsets = (container: HTMLDivElement | null) => {
 
 		container.addEventListener("resize", f);
 		return () => container.removeEventListener("resize", f);
-	}, [container]);
+	}, [container, update]);
 
-	return { cardOffsets };
+	return { cardOffsets, updateOffsets };
 };

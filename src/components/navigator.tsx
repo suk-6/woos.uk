@@ -12,7 +12,7 @@ type NavigatorProps = {
 
 export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 	const { isDark, setIsDark } = useDark();
-	const { cardOffsets } = useGetCardOffsets(container);
+	const { cardOffsets, updateOffsets } = useGetCardOffsets(container);
 
 	const navClass =
 		"bg-light dark:bg-dark border border-stroke border-light-nav-border dark:border-dark-nav-border p-3 rounded-lg";
@@ -23,6 +23,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 		if (!container) return;
 
 		const scrollY = container.scrollTop;
+		updateOffsets();
 
 		const move = (height: number) =>
 			container.scrollTo({
