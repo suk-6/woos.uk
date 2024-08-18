@@ -311,6 +311,6 @@ export const activities: ActivityType[] = [
 				month: 2,
 			},
 		},
-		content: null,
+		content: `덕영고등학교에서 진행한 싱가포르 국제교류 프로그램입니다.`,
 	},
 ];
