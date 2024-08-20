@@ -311,6 +311,8 @@ export const activities: ActivityType[] = [
 				month: 2,
 			},
 		},
-		content: `덕영고등학교에서 진행한 싱가포르 국제교류 프로그램입니다.`,
+		content: `덕영고등학교에서 진행한 싱가포르 국제교류 프로그램입니다.
+		
+		ITE College West에서 현지 친구들과 함께 프로젝트를 진행했습니다.`,
 	},
 ];
