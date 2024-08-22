@@ -228,7 +228,7 @@ export const activities: ActivityType[] = [
 				month: 9,
 			},
 		},
-		content: ``,
+		content: null,
 	},
 	{
 		title: "2023 AWS AI 전문가 멘토링 'On the day, Coaching day'",
