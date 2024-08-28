@@ -1,7 +1,9 @@
+import { TechStackType } from "../techStack";
+
 export type ProjectType = {
 	title: string;
 	description: string;
-	techStack?: string[];
+	techStack?: TechStackType[];
 	date: {
 		start: {
 			year: number;
