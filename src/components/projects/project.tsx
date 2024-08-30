@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 import { ProjectType } from "@/models/project";
+import { Tags } from "../tags";
 
 const monthFormat = (month: number) =>
 	month < 10 ? `0${month}` : month.toString();
@@ -73,6 +74,7 @@ export const Project = ({ data }: { data: ProjectType }) => {
 				</div>
 			</div>
 			<div className="w-full h-[1px] bg-light-contrast dark:bg-dark-contrast my-2" />
+			<Tags tags={data.techStack} />
 			<div className="whitespace-pre-line text-base font-light lg:pt-1">
 				{data.content}
 			</div>
