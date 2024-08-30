@@ -1,4 +1,4 @@
-import { TechStackType } from "../techStack";
+import { TechStackType } from "../stack/tech";
 
 export type ProjectType = {
 	title: string;
