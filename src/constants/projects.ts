@@ -8,6 +8,7 @@ export const projects: ProjectType[] = [
 			website: "https://woos.uk",
 			github: "https://github.com/suk-6/woos.uk",
 		},
+		techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
 		date: {
 			start: {
 				year: 2024,
@@ -104,6 +105,7 @@ export const projects: ProjectType[] = [
 				month: 6,
 			},
 		},
+		techStack: ["Next.js", "TypeScript", "AWS S3", "AWS CloudFront"],
 		content: `Next.js와 AWS S3, CloudFront 등을 이용하여 제 불편함을 해결하고자 했습니다. 파일 공유 시, 로그인하기 귀찮았던 저는 전용 파일 공유 서비스를 만들고자 했습니다. 단 아래와 같은 요구사항들이 존재했습니다.
 			
 			- 간편한 파일 업로드
@@ -145,6 +147,7 @@ export const projects: ProjectType[] = [
 			},
 			isEnd: false,
 		},
+		techStack: ["React", "NestJS", "TypeScript"],
 		content: `사람들은 여러 이유로 사람들과의 만남을 약속하고, 특정 장소에서, 특정 시간에 만나는 것을 기약 하지만, 종종 사람들은 그 기약을 어기고, 약속에 늦곤 합니다. ADEGO 팀은 이러한 문제를 포착하였고, 조금은 새롭게 접근하고 싶었습니다.
 			
 			약속을 생성하고, 딥링크를 통해 참가자를 초대하고, 위치를 실시간으로 공유하는 간단하지만 일상 속에서 많이 사용하게 될 서비스입니다.`,
