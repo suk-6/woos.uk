@@ -35,6 +35,14 @@ export const projects: ProjectType[] = [
 				month: 7,
 			},
 		},
+		techStack: [
+			"React",
+			"Vite",
+			"NestJS",
+			"TypeScript",
+			"Raspberry Pi",
+			"Python",
+		],
 		content: `기존 MAKE; Barcode 프로젝트는 아래와 같은 학생들의 불만 때문에 운영하기 어려운 상황에 도달했습니다.
 
 - 바코드 인식이 원활하지 않음
