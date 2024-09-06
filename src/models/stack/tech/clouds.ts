@@ -12,6 +12,7 @@ export const clouds = [
 	"Github Pages",
 	"Github Actions",
 	"Firebase",
+	"Firebase FCM",
 	"Netlify",
 	"Vercel",
 	"Heroku",
