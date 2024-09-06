@@ -82,6 +82,7 @@ export const projects: ProjectType[] = [
 				month: 4,
 			},
 		},
+		techStack: ["NestJS", "TypeScript", "Flutter", "Next.js", "Firebase FCM"],
 		content: `덕영시간표 - 매 시간마다, 다음 교시 과목을 알려주는 서비스
 			
 			매 교시, 수업이 끝나면 우리는 다음 과목이 무엇인 지 알아야 합니다. 학교 특성상 이동 수업이 많기 때문에, 항상 시간표를 확인해야하는 문제가 있었습니다. 이러한 문제를 푸시 알림으로 해결할 수 있다면, 적어도 나는 이러한 불편에서 조금이라도 벗어날 수 있지 않을까? 라는 생각에 개발하게 되었습니다.
