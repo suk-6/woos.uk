@@ -8,7 +8,7 @@ export const projects: ProjectType[] = [
 			website: "https://woos.uk",
 			github: "https://github.com/suk-6/woos.uk",
 		},
-		techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+		techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Vercel"],
 		date: {
 			start: {
 				year: 2024,
