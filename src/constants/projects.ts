@@ -167,6 +167,7 @@ export const projects: ProjectType[] = [
 		links: {
 			github: "https://github.com/suk-6/YUMYUM",
 		},
+		techStack: ["NestJS", "TypeScript"],
 		date: {
 			start: {
 				year: 2024,
