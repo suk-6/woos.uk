@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
 	return [
 		{
-			url: "https://nam.woo.suk.kr",
+			url: "https://woos.uk",
 			lastModified: new Date(),
 			priority: 1,
 		},
