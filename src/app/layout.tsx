@@ -12,11 +12,17 @@ export const metadata: Metadata = {
 		type: "website",
 		locale: "ko_KR",
 		siteName: "@woosuknam",
+		description: "Suk's personal website",
+		images: [
+			{
+				url: "https://woos.uk/og-image.png",
+				alt: "@woosuknam handle",
+			},
+		],
 	},
 	verification: {
 		other: {
-			"naver-site-verification":
-				"6cdbf3525bf38b1c16e33e8b378163eaec6dc6a6",
+			"naver-site-verification": "6cdbf3525bf38b1c16e33e8b378163eaec6dc6a6",
 		},
 	},
 };
