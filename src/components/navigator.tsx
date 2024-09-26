@@ -32,19 +32,19 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 			});
 
 		if (direction === "up") {
-			cardOffsets.forEach((cardOffset) => {
+			for (const cardOffset of cardOffsets) {
 				if (scrollY > cardOffset) {
 					move(cardOffset);
 					return;
 				}
-			});
+			}
 		} else if (direction === "down") {
-			cardOffsets.toReversed().forEach((cardOffset) => {
+			for (const cardOffset of cardOffsets.toReversed()) {
 				if (scrollY < cardOffset) {
 					move(cardOffset);
 					return;
 				}
-			});
+			}
 		}
 	};
 
@@ -54,6 +54,7 @@ export const Navigator = ({ isVisible, container }: NavigatorProps) => {
 				isVisible ? "opacity-100" : "opacity-0"
 			}`}
 		>
+			{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 			<div onClick={() => setIsDark(!isDark)} className={navClass}>
 				{isDark ? (
 					<MdOutlineDarkMode size={25} className={iconClass} />
