@@ -1,4 +1,4 @@
-import { ProjectType } from "@/models/project";
+import type { ProjectType } from "@/models/project";
 
 export const projects: ProjectType[] = [
 	{
@@ -199,7 +199,7 @@ export const projects: ProjectType[] = [
 				month: 4,
 			},
 		},
-		content: `WireGuard Protocol을 이용한 VPN 서비스입니다.`,
+		content: "WireGuard Protocol을 이용한 VPN 서비스입니다.",
 	},
 	{
 		title: "파토",
@@ -304,7 +304,8 @@ export const projects: ProjectType[] = [
 				month: 6,
 			},
 		},
-		content: `홈 네트워크를 구성하고 Synology NAS, Proxmox, Intel NUC 등을 활용한 서버들을 구축했습니다.`,
+		content:
+			"홈 네트워크를 구성하고 Synology NAS, Proxmox, Intel NUC 등을 활용한 서버들을 구축했습니다.",
 	},
 	{
 		title: "Korean History Site",
@@ -364,7 +365,8 @@ export const projects: ProjectType[] = [
 				month: 2,
 			},
 		},
-		content: `TensorFlow Lite 모델을 사용하여, 모바일 환경에서 실시간으로 이미지를 분류하는 앱입니다.`,
+		content:
+			"TensorFlow Lite 모델을 사용하여, 모바일 환경에서 실시간으로 이미지를 분류하는 앱입니다.",
 	},
 	{
 		title: "고1식",
@@ -383,7 +385,8 @@ export const projects: ProjectType[] = [
 				month: 12,
 			},
 		},
-		content: `매번 수학 공식을 찾기 위해 힘들게 구글링을 하는 것은 비효율적이라고 생각되어, 수학 공식을 모아서 보여주는 앱을 제작하였습니다.`,
+		content:
+			"매번 수학 공식을 찾기 위해 힘들게 구글링을 하는 것은 비효율적이라고 생각되어, 수학 공식을 모아서 보여주는 앱을 제작하였습니다.",
 	},
 	{
 		title: "월패드 보안 프로그램",
