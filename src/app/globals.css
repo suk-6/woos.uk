@@ -1,4 +1,6 @@
-@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
 	font-family: "HSSanTokki20-Regular";
@@ -8,9 +10,48 @@
 	font-style: normal;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+	font-family: "SUITE";
+	font-weight: 300;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-Light.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 400;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-Regular.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 500;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-Medium.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 600;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-SemiBold.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 700;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-Bold.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 800;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-ExtraBold.woff2")
+		format("woff2");
+}
+@font-face {
+	font-family: "SUITE";
+	font-weight: 900;
+	src: url("https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/static/woff2/SUITE-Heavy.woff2")
+		format("woff2");
+}
 
 /* 
 :root {
