@@ -228,31 +228,33 @@ export const projects: ProjectType[] = [
 				month: 4,
 			},
 		},
+		techStack: ["Python", "WireGuard"],
 		content: "WireGuard Protocol을 이용한 VPN 서비스입니다.",
 	},
-	{
-		title: "파토",
-		description: "약속이 파토난 1030 타겟 약속 중심 매칭 서비스",
-		links: {
-			github: "https://github.com/suk-6/pato-server",
-		},
-		date: {
-			start: {
-				year: 2024,
-				month: 2,
-			},
-			isEnd: false,
-		},
-		content: `백엔드 개발 총괄을 하였으며 주요 기능으로는 프론트엔드와 협업을 통한 웹소켓 채팅 구현, 카카오 OAuth 구현 등이 있습니다.
+	// {
+	// 	title: "파토",
+	// 	description: "약속이 파토난 1030 타겟 약속 중심 매칭 서비스",
+	// 	links: {
+	// 		github: "https://github.com/suk-6/pato-server",
+	// 	},
+	// 	date: {
+	// 		start: {
+	// 			year: 2024,
+	// 			month: 2,
+	// 		},
+	// 		isEnd: false,
+	// 	},
+	// 	content: `백엔드 개발 총괄을 하였으며 주요 기능으로는 프론트엔드와 협업을 통한 웹소켓 채팅 구현, 카카오 OAuth 구현 등이 있습니다.
 
-			 해당 팀 프로젝트를 진행하며 팀원간 소통의 중요성과 프로젝트 방법론에 대해 다시 한번 생각해볼 수 있는 계기가 되었습니다.`,
-	},
+	// 		 해당 팀 프로젝트를 진행하며 팀원간 소통의 중요성과 프로젝트 방법론에 대해 다시 한번 생각해볼 수 있는 계기가 되었습니다.`,
+	// },
 	{
 		title: "Gesture Recognition",
 		description: "2024 Singapore ITE College West Global Exchange Program",
 		links: {
 			github: "https://github.com/suk-6/gesture-recognition",
 		},
+		techStack: ["Flask", "OpenVINO"],
 		date: {
 			start: {
 				year: 2024,
