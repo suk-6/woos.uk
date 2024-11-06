@@ -44,7 +44,8 @@ export const projects: ProjectType[] = [
 			},
 			isEnd: false,
 		},
-		content: "",
+		content: `Next.js로 개발된 포트폴리오 웹사이트입니다.
+		현재도 개발 중이며, 이전에 사용하던 포트폴리오 서비스를 이용하며 불편했던 경험들에 대한 개선을 시도하고 있습니다.`,
 	},
 	{
 		title: "MAKE; Access Management System",
