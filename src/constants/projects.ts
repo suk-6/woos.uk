@@ -2,6 +2,34 @@ import type { ProjectType } from "@/models/project";
 
 export const projects: ProjectType[] = [
 	{
+		title: "suk.kr",
+		description: "나의 메인 페이지 (Feat. URL 단축)",
+		links: {
+			website: "https://suk.kr",
+			github: "https://github.com/suk-6/suk.kr",
+		},
+		techStack: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Vercel", "Vercel Edge Config"],
+		date: {
+			start: {
+				year: 2024,
+				month: 10,
+			},
+			isEnd: true,
+			end: {
+				year: 2024,
+				month: 10,
+			},
+		},
+		content: `suk.kr은 제 아이덴티티입니다.
+
+		메일, 호스팅 등 각종 서비스를 위해 사용하는 도메인이자, 나라는 사람을 나타내는 주소입니다.
+		한동안 이 도메인은 Bento, Programmers Career, Surfit 등의 포트폴리오 서비스로 연결되었지만, woos.uk로 이전하게 되면서 리다이렉트 페이지가 필요해졌습니다.
+		이를 Next.js로 개발함과 동시에, 기존에 오픈소스로 사용하던 URL 단축 서비스를 추가하여, 더욱 다양한 서비스를 제공하고자 했습니다.
+
+		Vercel의 Edge Config Store를 이용하여, URL 정보를 저장하고, 빠르게 불러올 수 있도록 구성했습니다.
+		`,
+	},
+	{
 		title: "woos.uk",
 		description: "포트폴리오 웹사이트",
 		links: {
