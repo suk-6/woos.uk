@@ -15,6 +15,7 @@ export const clouds = [
 	"Firebase FCM",
 	"Netlify",
 	"Vercel",
+	"Vercel Edge Config",
 	"Heroku",
 	"DigitalOcean",
 	"Oracle Cloud",
